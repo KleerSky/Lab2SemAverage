@@ -12,7 +12,7 @@
 
 
 Option Strict On    'turn on strict
-Public Class frmSemesterAverage
+Public Class frmSemesterAverage 'Namespace frmSemesterAverage
 
     Dim inputArray(5) As Double 'array of 6 as inputArray
 
@@ -23,7 +23,7 @@ Public Class frmSemesterAverage
 
     Private Sub frmSemesterAverage_Load(sender As Object, e As EventArgs) Handles MyBase.Load   'on form load
 
-    End Sub
+    End Sub 'end of form load
 
     Private Sub tbCourseOne_LostFocus(sender As Object, e As EventArgs) Handles tbCourseOne.LostFocus
 
@@ -42,7 +42,7 @@ Public Class frmSemesterAverage
             lbCourseOneLetter.Text = letterGrade    'set lettergrade label to letterGrade string from GradeEvaluation method
         Else                'if invalid ...
             lbOutput.Text &= vbCrLf & "Entry for Course 1 must be a number between 0 and 100" 'print error to label
-            lbCourseOneLetter.Text = "ERROR"    'print error in letterGrade label   
+            lbCourseOneLetter.Text = "Not Valid"    'print error in letterGrade label   
             '  tbCourseOne.Focus()
             tbCourseOne.SelectAll()     'select wrong text
         End If
