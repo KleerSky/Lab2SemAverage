@@ -8,6 +8,7 @@
 ' Calculates letter grade for the marks and prints.
 ' Once all six have been entered, calculates semester average and
 ' letter grade.
+' Grade calculation is the sum of all divided by the number of objects. This is how you comment. 
 '
 
 
@@ -44,7 +45,7 @@ Public Class frmSemesterAverage 'Namespace frmSemesterAverage
             lbOutput.Text &= vbCrLf & "Entry for Course 1 must be a number between 0 and 100" 'print error to label
             lbCourseOneLetter.Text = "Not Valid"    'print error in letterGrade label   
             '  tbCourseOne.Focus()
-            tbCourseOne.SelectAll()     'select wrong text
+            tbCourseOne.SelectAll()     'select wrong text jh
         End If
 
     End Sub
